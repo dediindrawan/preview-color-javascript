@@ -1,0 +1,142 @@
+// typography
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+
+// variables of typography
+$ft-1: 'Poppins', sans-serif;
+
+// variables of color
+$bg-dark: rgb(40, 44, 52);
+$bg-light: rgba(75, 85, 95, 0.2);
+$primary-color: rgb(179, 111, 200);
+$secondary-color: rgb(104, 113, 122);
+$warning-color: rgb(194, 144, 97);
+$success-color: rgb(152, 195, 121);
+$danger-color: rgb(173, 90, 99);
+$info-color: rgb(86, 182, 194);
+$netral-color: rgb(171, 178, 191);
+
+// variables of font size
+$fs-1: 2rem;
+$fs-2: 1.5rem;
+$fs-3: 1.17rem;
+$fs-4: 1rem;
+
+// variables of font weight
+$fw-1: 400;
+$fw-2: 800;
+
+// variables of transition
+$transition-1: all 0.3s ease-in-out;
+
+// reset default
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: $fs-1;
+  font-weight: $fw-2;
+}
+
+h2 {
+  font-size: $fs-2;
+  font-weight: $fw-1;
+  font-family: $ft-1;
+}
+
+p {
+  font-size: $fs-4;
+  font-family: $ft-1;
+}
+
+a {
+  text-decoration: none;
+  color: $netral-color;
+  transition: $transition-1;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  padding: 0.75em;
+  border-radius: 7.5px;
+  cursor: pointer;
+  font-size: $fs-4;
+  font-family: $ft-1;
+  color: $secondary-color;
+  background: $bg-light;
+  border: 2px dashed transparent;
+  transition: $transition-1;
+}
+
+// style
+html,
+body {
+  line-height: 1.65;
+  font-style: normal;
+  font-weight: normal;
+  font-family: $ft-1;
+  color: $netral-color;
+  background: $bg-dark;
+}
+
+.container {
+  width: 65%;
+  padding: 1.5em 1em;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 7.5px;
+  border: 2px solid $bg-light;
+  .color-preview {
+    width: 32.5%;
+    height: 75px;
+    margin: auto;
+    text-align: center;
+    line-height: 75px;
+    border-radius: 7.5px;
+    border: 2px solid $bg-light;
+    color: $secondary-color;
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
+  }
+  .color-picker {
+    width: 100%;
+    p {
+      text-align: center;
+      margin: 1em auto;
+    }
+    .button-group {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 0.75em;
+      button[type='submit'] {
+        width: 130px;
+        &:hover {
+          background: $bg-dark;
+          border: 2px dashed $bg-light;
+        }
+      }
+    }
+    .btn-reset {
+      width: 100%;
+      margin: 1em auto;
+      &:hover {
+        background: $bg-dark;
+        border: 2px dashed $bg-light;
+      }
+    }
+  }
+  @media screen and (max-width: 576px) {
+    width: 90%;
+  }
+}

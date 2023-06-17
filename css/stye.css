@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(171, 178, 191);
+  transition: all 0.3s ease-in-out;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  padding: 0.75em;
+  border-radius: 7.5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: rgb(104, 113, 122);
+  background: rgba(75, 85, 95, 0.2);
+  border: 2px dashed transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+html,
+body {
+  line-height: 1.65;
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Poppins", sans-serif;
+  color: rgb(171, 178, 191);
+  background: rgb(40, 44, 52);
+}
+
+.container {
+  width: 65%;
+  padding: 1.5em 1em;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 7.5px;
+  border: 2px solid rgba(75, 85, 95, 0.2);
+}
+.container .color-preview {
+  width: 32.5%;
+  height: 75px;
+  margin: auto;
+  text-align: center;
+  line-height: 75px;
+  border-radius: 7.5px;
+  border: 2px solid rgba(75, 85, 95, 0.2);
+  color: rgb(104, 113, 122);
+}
+@media screen and (max-width: 576px) {
+  .container .color-preview {
+    width: 100%;
+  }
+}
+.container .color-picker {
+  width: 100%;
+}
+.container .color-picker p {
+  text-align: center;
+  margin: 1em auto;
+}
+.container .color-picker .button-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 0.75em;
+}
+.container .color-picker .button-group button[type=submit] {
+  width: 130px;
+}
+.container .color-picker .button-group button[type=submit]:hover {
+  background: rgb(40, 44, 52);
+  border: 2px dashed rgba(75, 85, 95, 0.2);
+}
+.container .color-picker .btn-reset {
+  width: 100%;
+  margin: 1em auto;
+}
+.container .color-picker .btn-reset:hover {
+  background: rgb(40, 44, 52);
+  border: 2px dashed rgba(75, 85, 95, 0.2);
+}
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+}/*# sourceMappingURL=stye.css.map */
